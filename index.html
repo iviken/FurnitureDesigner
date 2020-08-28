@@ -1,0 +1,120 @@
+<!--	
+	Testing in Chrome v84 and FF v80
+	
+	Last update in 26.08.20
+	
+	Mastered  CSS 3  animation & effects,  CSS Grid  and  CSS Flexbox
+	
+	Сайт сверстан полностью вручную.
+	
+	Используются новые технологии разметки Grid (для меню) и Flex (для бара), CSS 3  анимация и эффекты
+		К сожалению Grid фичу - возможность перестройки макета (grid-template-area), пришлось выкинуть из-за простой конструкции разметки сайта.
+-->	
+<?php
+header("Content-Type:text/html; charset=utf-8");
+?>
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Портфолио конструктора мебели</title>
+<link rel="shortcut icon" href="favicon.gif" type="image/gif">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Внимание к деталям - этим качеством я бы охарактеризовал работу констуктора мебельной индустрии.">
+<title></title>
+<!--link rel="stylesheet" href="debug.css"-->
+<link rel="stylesheet" href="adaptiveStyles.css">
+<link rel="stylesheet" href="designStyles.css">
+<link rel="stylesheet" href="animationStyles.css">
+</head>
+<body>
+
+<div class="initialLettersDiv">
+	<div class="contactsStyles	MOBILE_contactsDiv">
+		<div class="phoneNumber	contactsFontStyle">
+			977&nbsp;643&nbsp;7154
+		</div>
+		<div class="businessCardDiv">
+			<a href="businessCard2.jpg" class="businessCardLinkStyle	contactsFontStyle">Визитка</a>
+		</div>
+	</div>
+</div>
+
+<img src="animation/LETTERS-greetings-textAnimation.gif" class="backsideFrameDiv	framesDiv	" id="backSlideImageID">
+<img src="animation/LETTERS-greetings-initials.gif" class="frontsideFrameDiv	framesDiv	frontsideFrameAnimation	" id="frontSlideImageID">
+
+<div class="menuDiv		menuDivStyle	menuTransitionStyle" id="menuID">
+
+	<div class="menuItemEmpty"></div>
+	<div class="subMenuDiv	menuTransitionStyle">
+		<div class="menuItemButton"><div class="menuItemSelectorStyle"><div class="menuItemPhotos		menuItemPhotosStyle			menuItemsStyle	menuItemMOBILE"	id="menuGalleryID"></div></div></div>
+		<div class="menuItemButton"><div class=""><div class="menuItemBedrooms		menuItemBedroomsStyle		menuItemsStyle	menuItemMOBILE" id="menuBadroomID"></div></div></div>
+		<div class="menuItemButton"><div class=""><div class="menuItemKitchens		menuItemKitchensStyle		menuItemsStyle	menuItemMOBILE" id="menuKitchenID"></div></div></div>
+		<div class="menuItemButton"><div class=""><div class="menuItemPlaygrounds	menuItemPlaygroundsStyle	menuItemsStyle	menuItemMOBILE" id="menuPlaygroundID"></div></div></div>
+	</div>
+	<div class="menuItemEmpty">
+		<div class="contactsStyles	PC_contactsDiv">
+			<div class="phoneNumber	contactsFontStyle">
+				977&nbsp;643&nbsp;7154
+			</div>
+			<div class="businessCardDiv">
+				<a href="businessCard2.jpg" class="businessCardLinkStyle	contactsFontStyle">Визитка</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="barDiv			barDivStyle	transitionAppearanceBar"	id="barID">
+	<div class="barPreviousNextDiv	barPreviusStyle"></div>
+	<div>
+		<div class="barPixStyle">
+			<img src="bar/bar (1).png" class="transitionImagesBar	barDivImages">
+		</div>
+	</div>
+	<div></div>
+	<div>
+		<div class="barPixStyle">
+			<img src="bar/bar (2).png" class="transitionImagesBar	barDivImages">
+		</div>
+	</div>
+	<div></div>
+	<div>
+		<div class="barPixStyle">
+			<img src="bar/bar (3).png" class="transitionImagesBar	barDivImages">
+		</div>
+	</div>
+	<div></div>
+	<div>
+		<div class="barPixStyle">
+			<img src="bar/bar (4).png" class="transitionImagesBar	barDivImages">
+		</div>
+	</div>
+	<div></div>
+	<div>
+		<div class="barPixStyle">
+			<img src="bar/bar (5).png" class="transitionImagesBar	barDivImages">
+		</div>
+	</div>
+	<div></div>
+	<div>
+		<div class="barPixStyle">
+			<img src="bar/bar (6).png" class="transitionImagesBar	barDivImages">
+		</div>
+	</div>
+	<div class="barPreviousNextDiv	barNextStyle"></div>
+</div>
+
+
+
+</body>
+<script src="math.js"></script>
+<script src="units.js"></script>
+<script src="global.js"></script>
+<script src="parallax.js"></script>
+<script src="gallery2.js"></script>
+<script src="menu.js"></script>
+<script src="bar.js"></script>
+<script src="controls.js"></script>
+</html>

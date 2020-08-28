@@ -1,0 +1,246 @@
+body{
+	background-color:	rgb(	240,	240,	240	);
+	overflow:			hidden;
+}
+
+.frontsideFrameDiv{
+	
+}
+
+	.menuDivStyle{			background:			
+								url(LETTERS_portfolio.png)	no-repeat,
+								linear-gradient(
+									to bottom,	
+									rgba(	250,	250,	250,	1	) 0%,	
+									rgba(	250,	250,	250,	1	) 90%,
+									rgba(	250,	250,	250,	0	) 100%
+								);
+							background-size:		1%;
+							background-position:	center;
+							opacity:	.8;
+							}
+							
+	.menuDivStyle:hover{}
+							
+		.subMenuDiv{
+			background:				url(PC_menu_decor.png)	no-repeat;
+			background-size:		0%;
+			background-position:	center;
+			
+		}
+		
+			.menuItemButton{
+				padding:	5px;
+			}
+			
+			/*	селектор выбранного пункта меню. Применяется через скрипт	*/
+			.menuItemSelectorStyle{
+				background-image:		url(	menu_Selector.png	);	
+				background-position:	center;
+				background-repeat:		no-repeat;
+				background-size:		80%	70%;
+				
+			}
+			
+			.menuItemPhotosStyle{	
+				background-image:	url(	galleryPNG24-30px.png	);
+			}
+			.menuItemPhotosStyle:hover{	
+				background-image:	url(	galleryPNG24-30px-hover.png	);
+			}
+			.menuItemPhotosStyle:active{	
+				background-image:	url(	galleryPNG24-30px-active.png	);
+			}
+			
+			.menuItemBedroomsStyle{		
+				background-image:	url(	badroom30px.png	);
+			}
+			.menuItemBedroomsStyle:hover{	
+				background-image:	url(	badroom-hover-animate30px-gray.gif	);	
+			}
+			menuItemBedroomsStyle:active{
+				background-image:	url(	badroom-active30px-gray.gif	);
+			}
+			
+			.menuItemKitchensStyle{
+				background-image:	url(	kitchen30px.png	);
+			}
+			.menuItemKitchensStyle:hover{
+				background-image:	url(	kitchen-hover-animate30px-gray.gif	);
+			}
+			.menuItemKitchensStyle:active{
+				background-image:	url(	kitchen-active30px-gray.gif	);
+			}
+			
+			.menuItemPlaygroundsStyle{
+				background-image:	url(	playground30px.png	);
+			}
+			.menuItemPlaygroundsStyle:hover{
+				background-image:	url(	playground-hover-animate30px-gray.gif	);
+			}
+			.menuItemPlaygroundsStyle:active{
+				background-image:	url(	playground-active30px.gif	);
+			}
+			
+			.menuItemsStyle{
+				/*	Задал высоту в пикселях. т.к. если при просмотре на айпаде 	выйдет клавиатура, с относительными ед. будет все сжиматься.	*/
+				height:					40px;
+				background-position:	center;
+				background-repeat:		no-repeat;
+				
+			}
+	
+	.barDivStyle{
+		background-color:	rgba(255,	255,	255,	.25);
+		padding:			10px;
+	}
+
+	.barDivStyle>div{
+		
+	}
+	
+	.barDivStyle:hover{
+		background-color:	rgba(255,	255,	255,	.5);
+		
+	}
+	
+	.barPixStyle{
+		
+	}
+	
+	.barPixStyle:hover{
+		background:			url(	animation/circle-hover-animateCircles-110px-opacity.gif	) 	no-repeat;
+		background-size:	9vw;
+		background-position:center;
+		border:				0px solid;
+		border-radius:		50%	50%	50%	50%;
+		border-color:		white;
+		background-color:	rgba(200,	250,	100,	1);
+	}
+	.barPixStyle:active{
+		border:				0px solid;
+		border-radius:		50%	50%	50%	50%;
+		border-color:		white;
+		background-color:	black;
+	};
+		
+		.barDivImages{
+			/*	Задать размеры изображений здесь	*/
+			/*		Почему-то позднее размеры изображений перестали меняться по этим параметрам	*/
+			height:		90px;
+			width:		90px;
+			margin:		10px;
+			display:	block;
+			overflow:	visible;
+		}
+		
+		.barDivImages:hover{
+			
+		}
+		
+		.barPreviusStyle{
+			background:			url(	cursorPrevious.png	)	no-repeat;
+			background-size:	contain;
+		}
+		
+		.barPreviusStyle:hover{
+			background:			url(	cursorPreviousActive.png	)	no-repeat;
+			background-size:	contain;
+		}
+		
+		.barNextStyle{
+			background:			url(	cursorNext.png	)	no-repeat;
+			background-size:	contain;
+		}
+		
+		.barNextStyle:hover{
+			background:			url(	cursorNextActive.png	)	no-repeat;
+			background-size:	contain;
+		}
+		
+		
+	.contactsFontStyle{
+		color:				black;
+		font-weight:		light;
+		font-size:			small;
+		font-family:		"Verdana","sans-serif";
+		text-decoration:	none;
+	};
+	
+	.businessCardLinkStyle{
+		
+	}
+	
+	.businessCardLinkStyle:hover{
+		
+	}
+
+/*	Для мобильных	*/
+@media(max-width:	800px){
+	.menuDivStyle{
+		background:				url(	LETTERS_portfolio.png	)		no-repeat;
+		background-size:		1%;
+		background-position:	center;
+	}
+	
+	menuDivStyle:hover{
+		
+	}
+	
+	.subMenuDiv{
+		background:				url(MOBILE_menu_separator.png);
+		background-repeat:		no-repeat;
+		background-size:		15%;
+		background-position:	center;
+	}
+	
+	.subMenuDiv:hover{
+		
+	}
+	
+	.menuItemSelectorStyle:hover{
+		
+	}
+	
+	.initialLettersDiv{
+		background:			url(	LETTERS_portfolio.png	)	no-repeat	center;
+		background-size:	50%
+	}
+	
+}
+/*	Для ПК	*/
+@media (min-width:	1024px){
+	.menuDivStyle:hover{	
+							height:				50vh;
+							background:			
+								url(LETTERS_portfolio.png)	no-repeat,
+								linear-gradient(
+									to bottom,	
+									rgba(	250,	250,	250,	1	) 0%,	
+									rgba(	250,	250,	250,	1	) 70%,
+									rgba(	250,	250,	250,	0	) 100%
+								);
+							background-size:	50%;
+							background-position:	center;
+							opacity:	1;
+							}
+
+	.menuDecor:hover{
+		background:				url(PC_menu_decor.png)	no-repeat;
+		background-size:		100%;
+		background-position:	center;
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+.menuDiv:hover{
+	background-color:	black;
+}
+.subMenuDiv:hover{
+	background-color:	blue;
+}
+
+.menuItemButton{
+	background-color:	orange;
+}
+
+.menuItemSelectorStyle{
+	background-color:	green;
+}
+
+.menuItemsStyle{
+	background-color:	red;
+};

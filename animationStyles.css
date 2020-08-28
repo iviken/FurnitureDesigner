@@ -1,0 +1,151 @@
+
+@keyframes	barAppearanceAnimation{
+	0%{
+		opacity:	0;
+	}
+	1%{
+		opacity:	0;
+	}
+	2%{
+		opacity:	1;
+		
+	}
+	99%{
+		opacity:	1;
+	}
+	100%{
+		opacity:	0;
+	}
+}
+
+
+@-webkit-keyframes	barImagesAnimation{
+	0%{
+		filter:		brightness(	0%	);
+		transform: 	scale(0.1, 0.1)
+	}
+	
+	2%{
+		filter:		brightness(	0%	);
+		transform: 	scale(0.1, 0.1)
+	}
+	
+	5%{
+		filter:		brightness(	100%	);
+		transform: 	scale(1, 1)
+	}
+	
+	95%{
+		filter:		brightness(	100%	);
+		transform: 	scale(1, 1)
+	}
+	
+	100%{
+		filter:		brightness(	0%	);
+		transform: 	scale(0.1, 0.1)
+	}
+}
+
+@keyframes	slideshow{
+	0%{
+		opacity:	1;
+		
+	}
+	25%{
+		opacity:	1;
+		
+	}
+	50%{
+		opacity:	0;
+		
+	}
+	75%{
+		opacity:	0;
+		
+	}
+	100%{
+		opacity:	1;
+		/*	filter:	blur(0px);	*/
+	}
+}
+
+.menuTransitionStyle{	transition:	1s ease;	}
+
+.barHideAnimation{
+	bottom:	-200px;
+	transition-duration:	2s;
+	opacity:	0;
+}
+
+/*	Для смартфонов	*/
+@media(max-width:	800px){
+	
+	.transitionAppearanceBar{}
+		
+	.contentDivSrenarioAnimation{	
+	background:			url(frameOne.jpg)	no-repeat	50%	;
+	background-size:	cover;
+	}
+	
+	.frontsideFrameAnimation{
+		animation:	slideshow	18s	infinite;
+	}
+	
+}
+
+/*	Для настольных и планшетов	*/
+@media (min-width:	1023px), (max-width:	641){
+	
+	.transitionAppearanceBar{
+		animation:			barAppearanceAnimation	1080s infinite;
+	}
+	
+	.transitionImagesBar{
+		animation:			barImagesAnimation	108s	infinite;
+		border:				0px solid;
+		border-radius:		50%	50%	50%	50%;
+		border-color:		white;
+		background-color:	rgba(200,	200,	200,	.5);
+		animation-delay:	9s;
+	}
+	
+	.contentDivSrenarioAnimation{	
+		background:			url(frameOne.jpg)	no-repeat	;
+		background-size:	cover;
+	}
+	/*
+		.blurStyleEnd{
+		transition-delay:	1.5s;	transition-duration:	1s;	filter:	blur(0px);
+	}
+	*/
+	.blurStyleStart{
+		transition-delay:	1.5s;	transition-duration:	1s;	filter:	blur(5px);
+	}
+	
+	.frontsideFrameAnimation{
+		animation:				slideshow	18s	infinite;
+		animation-play-state:	paused;
+	}
+
+	.frontsideFrameAnimation:hover{
+		animation:				slideshow	18s	infinite;
+		animation-play-state:	running;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
