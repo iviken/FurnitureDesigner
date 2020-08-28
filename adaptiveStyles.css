@@ -3,18 +3,6 @@ body{
 	padding:0;
 }
 
-.frontsideFrameDiv{
-	width:		107%;
-	position:	absolute;
-	left:		-40;
-}
-
-.backsideFrameDiv{
-	width:		107%;
-	position:	absolute;
-	left:		-40;
-}
-
 framesDiv{
 	
 }
@@ -27,10 +15,6 @@ framesDiv{
 				left:					0;
 				
 	}
-		.subMenuDiv{display:				grid;	
-					grid-template-columns:	repeat(	auto-fit, minmax(20vh, 1fr)	);
-					
-		}
 
 		.menuItemEmpty{}
 			.menuItemPhotos{}
@@ -53,8 +37,26 @@ framesDiv{
 
 /*	Для ПК	*/
 @media (min-width:	1024px){
+	
+	.frontsideFrameDiv{
+		width:		107%;
+		position:	absolute;
+		left:		-40;
+	}
+
+	.backsideFrameDiv{
+		width:		107%;
+		position:	absolute;
+		left:		-40;
+	}
+	
 	.menuDiv{
 		height:		75px;
+	}
+	
+	.subMenuDiv{
+		display:				grid;	
+		grid-template-columns:	repeat(	auto-fit, minmax(20vh, 1fr)	);
 	}
 	
 	.initialLettersDiv{
@@ -70,27 +72,41 @@ framesDiv{
 
 /*	Для смартфонов	*/
 @media(max-width:	800px){
+	
+	.MOBILE_contactsDiv{
+		
+	}
+	
 	.frontsideFrameDiv{
-		left:	-25;
+		width:		120%;
+		position:	absolute;
+		left:		-10%;
+	}
+
+	.backsideFrameDiv{
+		width:		120%;
+		position:	absolute;
+		left:		-10%;
 	}
 	
 	.framesDiv{
-		top:	40vh;
+		top:		35vh;
 	}
 	
 	.menuDiv{	
 		grid-template-columns:	1fr 10fr 1fr;
 		grid-template-rows:		repeat(	1fr	);
-		top:		15vh;
+		top:					10vh;
+	}
+
+	.subMenuDiv{
+		display:				grid;	
+		grid-template-columns:	repeat(	auto-fit, minmax(20vh, 1fr)	);
+		grid-gap:				8vw;
 	}
 
 	.barDiv{
-		display:	none;
-	}
-	
-	.subMenuDiv{
-		grid-gap:	8vw;
-		
+		display:		none;
 	}
 	
 	.menuItemPhotos{
@@ -108,7 +124,7 @@ framesDiv{
 	}
 	
 	.initialLettersDiv{
-		height:	20%;
+		height:		20%;
 	}
 	
 	.PC_contactsDiv{

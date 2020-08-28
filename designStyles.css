@@ -1,27 +1,13 @@
-body{
-	background-color:	rgb(	240,	240,	240	);
-	overflow:			hidden;
-}
 
 .frontsideFrameDiv{
 	
 }
 
-	.menuDivStyle{			background:			
-								url(LETTERS_portfolio.png)	no-repeat,
-								linear-gradient(
-									to bottom,	
-									rgba(	250,	250,	250,	1	) 0%,	
-									rgba(	250,	250,	250,	1	) 90%,
-									rgba(	250,	250,	250,	0	) 100%
-								);
-							background-size:		1%;
-							background-position:	center;
-							opacity:	.8;
-							}
-							
+	.menuDivStyle{			
+	}
+
 	.menuDivStyle:hover{}
-							
+
 		.subMenuDiv{
 			background:				url(PC_menu_decor.png)	no-repeat;
 			background-size:		0%;
@@ -33,61 +19,11 @@ body{
 				padding:	5px;
 			}
 			
-			/*	селектор выбранного пункта меню. Применяется через скрипт	*/
-			.menuItemSelectorStyle{
-				background-image:		url(	menu_Selector.png	);	
-				background-position:	center;
-				background-repeat:		no-repeat;
-				background-size:		80%	70%;
-				
-			}
-			
-			.menuItemPhotosStyle{	
-				background-image:	url(	galleryPNG24-30px.png	);
-			}
-			.menuItemPhotosStyle:hover{	
-				background-image:	url(	galleryPNG24-30px-hover.png	);
-			}
-			.menuItemPhotosStyle:active{	
-				background-image:	url(	galleryPNG24-30px-active.png	);
-			}
-			
-			.menuItemBedroomsStyle{		
-				background-image:	url(	badroom30px.png	);
-			}
-			.menuItemBedroomsStyle:hover{	
-				background-image:	url(	badroom-hover-animate30px-gray.gif	);	
-			}
-			menuItemBedroomsStyle:active{
-				background-image:	url(	badroom-active30px-gray.gif	);
-			}
-			
-			.menuItemKitchensStyle{
-				background-image:	url(	kitchen30px.png	);
-			}
-			.menuItemKitchensStyle:hover{
-				background-image:	url(	kitchen-hover-animate30px-gray.gif	);
-			}
-			.menuItemKitchensStyle:active{
-				background-image:	url(	kitchen-active30px-gray.gif	);
-			}
-			
-			.menuItemPlaygroundsStyle{
-				background-image:	url(	playground30px.png	);
-			}
-			.menuItemPlaygroundsStyle:hover{
-				background-image:	url(	playground-hover-animate30px-gray.gif	);
-			}
-			.menuItemPlaygroundsStyle:active{
-				background-image:	url(	playground-active30px.gif	);
-			}
-			
 			.menuItemsStyle{
 				/*	Задал высоту в пикселях. т.к. если при просмотре на айпаде 	выйдет клавиатура, с относительными ед. будет все сжиматься.	*/
 				height:					40px;
 				background-position:	center;
 				background-repeat:		no-repeat;
-				
 			}
 	
 	.barDivStyle{
@@ -177,14 +113,24 @@ body{
 
 /*	Для мобильных	*/
 @media(max-width:	800px){
+	
+	body{
+		background-color:		rgb(	240,	240,	240	);
+		overflow:				hidden;
+	}
+	
+	/*	селектор выбранного пункта меню. Применяется через скрипт	*/
+	.menuItemSelectorStyle{
+		background-image:		url(	menu_selector.png	);	
+		background-position:	center;
+		background-repeat:		no-repeat;
+		background-size:		65%	45%;
+	}
+	
 	.menuDivStyle{
 		background:				url(	LETTERS_portfolio.png	)		no-repeat;
 		background-size:		1%;
 		background-position:	center;
-	}
-	
-	menuDivStyle:hover{
-		
 	}
 	
 	.subMenuDiv{
@@ -194,36 +140,134 @@ body{
 		background-position:	center;
 	}
 	
-	.subMenuDiv:hover{
-		
-	}
-	
-	.menuItemSelectorStyle:hover{
-		
-	}
-	
 	.initialLettersDiv{
+		/*
 		background:			url(	LETTERS_portfolio.png	)	no-repeat	center;
 		background-size:	50%
+		*/
+	}
+	
+	.menuItemPhotosStyle{	
+		background-image:	url(	galleryPNG24-30px.png	);
+		background-size:	35%;
+	}
+	.menuItemPhotosStyle:active{	
+		background-image:	url(	galleryPNG24-30px-active.png	);
+		background-size:	35%;
+	}
+	
+	.menuItemBedroomsStyle{		
+		background-image:	url(	badroom30px.png	);
+		background-size:	35%;
+	}
+	menuItemBedroomsStyle:active{
+		background-image:	url(	badroom-active30px-gray.gif	);
+		background-size:	35%;
+	}
+	
+	.menuItemKitchensStyle{
+		background-image:	url(	kitchen30px.png	);
+		background-size:	35%;
+	}
+	.menuItemKitchensStyle:active{
+		background-image:	url(	kitchen-active30px-gray.gif	);
+		background-size:	35%;
+	}
+	
+	.menuItemPlaygroundsStyle{
+		background-image:	url(	playground30px.png	);
+		background-size:	35%;
+	}
+	.menuItemPlaygroundsStyle:active{
+		background-image:	url(	playground-active30px.gif	);
+		background-size:	35%;
 	}
 	
 }
 /*	Для ПК	*/
 @media (min-width:	1024px){
+	
+	body{
+		background-color:		rgb(	240,	240,	240	);
+		overflow:				hidden;
+	}
+	
+	/*	селектор выбранного пункта меню. Применяется через скрипт	*/
+	.menuItemSelectorStyle{
+		background-image:		url(	menu_selector.png	);	
+		background-position:	center;
+		background-repeat:		no-repeat;
+		background-size:		80%	70%;
+	}
+	
+	.menuItemPhotosStyle{	
+		background-image:	url(	galleryPNG24-30px.png	);
+	}
+	.menuItemPhotosStyle:hover{	
+		background-image:	url(	galleryPNG24-30px-hover.png	);
+	}
+	.menuItemPhotosStyle:active{	
+		background-image:	url(	galleryPNG24-30px-active.png	);
+	}
+	
+	.menuItemBedroomsStyle{		
+		background-image:	url(	badroom30px.png	);
+	}
+	.menuItemBedroomsStyle:hover{	
+		background-image:	url(	badroom-hover-animate30px-gray.gif	);	
+	}
+	menuItemBedroomsStyle:active{
+		background-image:	url(	badroom-active30px-gray.gif	);
+	}
+	
+	.menuItemKitchensStyle{
+		background-image:	url(	kitchen30px.png	);
+	}
+	.menuItemKitchensStyle:hover{
+		background-image:	url(	kitchen-hover-animate30px-gray.gif	);
+	}
+	.menuItemKitchensStyle:active{
+		background-image:	url(	kitchen-active30px-gray.gif	);
+	}
+	
+	.menuItemPlaygroundsStyle{
+		background-image:	url(	playground30px.png	);
+	}
+	.menuItemPlaygroundsStyle:hover{
+		background-image:	url(	playground-hover-animate30px-gray.gif	);
+	}
+	.menuItemPlaygroundsStyle:active{
+		background-image:	url(	playground-active30px.gif	);
+	}
+	
+	.menuDivStyle{
+		background:			
+			url(LETTERS_portfolio.png)	no-repeat,
+			linear-gradient(
+				to bottom,	
+				rgba(	250,	250,	250,	1	) 0%,	
+				rgba(	250,	250,	250,	1	) 90%,
+				rgba(	250,	250,	250,	0	) 100%
+			);
+		background-size:		1%;
+		background-position:	center;
+		opacity:				.8;
+	}
+	
 	.menuDivStyle:hover{	
-							height:				50vh;
-							background:			
-								url(LETTERS_portfolio.png)	no-repeat,
-								linear-gradient(
-									to bottom,	
-									rgba(	250,	250,	250,	1	) 0%,	
-									rgba(	250,	250,	250,	1	) 70%,
-									rgba(	250,	250,	250,	0	) 100%
-								);
-							background-size:	50%;
-							background-position:	center;
-							opacity:	1;
-							}
+		height:					50vh;
+		background:			
+			url(LETTERS_portfolio.png)	no-repeat,
+			linear-gradient(
+				to bottom,	
+				rgba(	250,	250,	250,	1	) 0%,	
+				rgba(	250,	250,	250,	1	) 70%,
+				rgba(	250,	250,	250,	0	) 100%
+			);
+		background-size:		50%;
+		background-position:	center;
+		opacity:				1;
+	}
 
 	.menuDecor:hover{
 		background:				url(PC_menu_decor.png)	no-repeat;
